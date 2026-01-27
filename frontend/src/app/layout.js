@@ -1,4 +1,4 @@
-import "./globals.css";
+import "..styles/globals.css";
 import Nav from "@/components/Nav";
 import Script from "next/script";
 <Script
