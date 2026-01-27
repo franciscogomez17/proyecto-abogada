@@ -1,4 +1,5 @@
-export default async function NovedadItem() {
+"use client";
+export default function NovedadItem() {
     return(
         <div className="Novedades">
             <h1>Titulo</h1>

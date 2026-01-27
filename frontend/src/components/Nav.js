@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 
 export default function Nav() {
@@ -30,19 +31,19 @@ export default function Nav() {
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" href="/sobremi">
+                <Link className="nav-link" href="/Sobremi">
                   Sobre mí
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" href="/servicios">
+                <Link className="nav-link" href="/Servicios">
                   Servicios
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" href="/contacto">
+                <Link className="nav-link" href="/Contacto">
                   Contacto
                 </Link>
               </li>

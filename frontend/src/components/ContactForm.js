@@ -1,4 +1,5 @@
-export default function ContacForm() {
+"use client";
+export default function ContactForm() {
     return(
         <>
         <form action="/contacto" method="post" className="formulario" >
@@ -20,7 +21,7 @@ export default function ContacForm() {
         
         <p>
             <label>Comentario</label>
-            <textarea name="comenatio"></textarea>
+            <textarea name="comentario"></textarea>
         </p>
         
         <p className="centrar"><input type="submit" value="enviar" />
