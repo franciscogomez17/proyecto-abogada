@@ -1,8 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import "@/styles/home.css";
-import "@/styles/sobremi.css";
-import "@/styles/servicios.css";
 
 export default function Home() {
   return (

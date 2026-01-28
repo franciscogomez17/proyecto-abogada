@@ -3,6 +3,7 @@ import Nav from "@/components/Nav";
 import Script from "next/script";
 import "@/styles/servicios.css";
 import "@/styles/sobremi.css";
+import "@/styles/home.css";
 <Script
   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
   strategy="afterInteractive"
