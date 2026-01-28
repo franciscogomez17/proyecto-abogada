@@ -1,55 +1,46 @@
 "use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Nav() {
+
+const pathname = usePathname();
+const isActive = (path) => path === pathname;
+
+
     return(
          <div className="container-fluid">
       <nav className="navbar navbar-expand-lg mi-navbar">
         <div className="container-fluid">
-          <Link className="navbar-brand" href="/">
-            Dr. Maria - Abogada
-          </Link>
-
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
 
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link active" href="/">
+                <Link href="/" className={`nav-link ${isActive("/") ? "active" : ""}`}>
                   Inicio
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" href="/Sobremi">
+                <Link href="/Sobremi" className={`nav-link ${isActive("/") ? "active" : ""}`}>
                   Sobre mí
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" href="/Servicios">
+                <Link href="/Servicios" className={`nav-link ${isActive("/") ? "active" : ""}`}>
                   Servicios
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link className="nav-Link" href="/Novedades">
+                <Link href="/Novedades" className={`nav-link ${isActive("/") ? "active" : ""}`}>
                 Novedades
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" href="/Contacto">
+                <Link href="/Contacto" className={`nav-link ${isActive("/") ? "active" : ""}`}>
                   Contacto
                 </Link>
               </li>

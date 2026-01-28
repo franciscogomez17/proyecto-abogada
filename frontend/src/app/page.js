@@ -1,5 +1,8 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import "@/styles/home.css";
+import "@/styles/sobremi.css";
+import "@/styles/servicios.css";
 
 export default function Home() {
   return (
@@ -8,7 +11,7 @@ export default function Home() {
         <img src="abogacia_960x250.png" alt="imagenprincipal" />
       </div>
       <div className="columnas">
-        <div className="Bienvenidos">
+        <div className="bienvenidos">
           <h2>Home</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
 
@@ -17,7 +20,7 @@ Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed 
 Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
 </p>
         </div>
-        <div className="Testimonios">
+        <div className="testimonios">
           <h2>Testimonios</h2>
           <div className="testimonio">
             <span className="cita">Excelente Servicio</span>

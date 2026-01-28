@@ -5,4 +5,79 @@
 body {
      font-family: "Inter", sans-serif;
      font-size: 16px;
+     line-height: 20px;
+     margin: 0;
+     padding: 0;
 }
+
+.holder {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: rgb(224, 143, 114);
+    font-weight: 400px;
+}
+
+header {
+    background-color: rgb(224, 143, 114);
+    padding: 16px 0;
+}
+
+header h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 100;
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+    bottom: 35px;
+    margin-left: 10px;
+}
+
+nav{
+    background-color: rgb(197, 127, 101);
+    margin-bottom: 20px;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li{
+    flex-grow: 1;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: rgb(197, 127, 101);
+}
+
+nav ul li a.activo {
+    background-color: rgb(224, 143, 114);
+}
+
+footer {
+    background-color: rgb(196, 125, 99);
+    clear: both;
+    color: black;
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 20px;
+}
+
+.h4 {
+    color: rgb(155, 98, 78);
+}
+

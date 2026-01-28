@@ -1,6 +1,8 @@
-import "..styles/globals.css";
+import "@/styles/globals.css";
 import Nav from "@/components/Nav";
 import Script from "next/script";
+import "@/styles/servicios.css";
+import "@/styles/sobremi.css";
 <Script
   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
   strategy="afterInteractive"
@@ -23,8 +25,8 @@ export default function RootLayout({ children }) {
             </div>
           </div>
         </header>
-        {children}
         <Nav />
+        {children}
         <footer>
           <p>Derechos Reservados. Abogada</p>
         </footer>
