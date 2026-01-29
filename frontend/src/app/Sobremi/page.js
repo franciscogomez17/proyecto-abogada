@@ -7,17 +7,17 @@ export default function Sobremi() {
     return(
         <section className="holderSobremi">
             <div className="historia">
-                <h2>Quien soy</h2>
+                <h2>Acerca de mí</h2>
                 <div>
-                    <p>Soy abogada egresada en el año 2019, con una profunda vocación por el Derecho Civil y la búsqueda de soluciones justas para mis clientes.</p>
-                    <p>Desde el año 2021, he consolidado mi practica de manera independiente, lo que me permite brindar una atención personaliada, cercana y basada en la confianza mutua.</p>
-                    <p>Mi compromiso con la excelencia me lleva a una formación constante. Recientemente, he profundizado mis conocimientos para ofrecer una defensa técnica de vanguardia en áreas sensibles y complejas del derecho actual.</p>
+                    <p>Soy abogada y acompaño a personas, emprendedores y profesionales que necesitan ordenar, resolver y tomar decisiones legales con claridad. Creo en el derecho como una herramienta práctica para destrabar conflictos y avanzar, no como un camino de desgaste innecesario.</p>
+                    <p>Mi trabajo se enfoca en la negociación, los acuerdos extrajudiciales, la gestión estratégica de cobranzas y el análisis de situaciones crediticias, siempre con una mirada humana y realista. Me interesa que cada persona entienda su situación, conozca sus opciones y pueda elegir con tranquilidad.</p>
+                    <p>Trabajo desde la cercanía, el compromiso y la confianza, buscando soluciones simples y efectivas que se adapten a cada caso y a cada historia.</p>
                 </div>
             </div>
             <div className="Staff">
             <h2>Staff</h2>
             <div className="persona">
-                <img src="abogada_120x120.png" width="75" alt="imagen1" />
+                <img src="fotostaff_150x150.jpeg" width="75" alt="imagenstaff" />
                 <h5>Dra. Maria Celeste Gomez</h5>
             <h6>Abogada Especialista en Derecho Civil</h6>
             <p><strong>2025:</strong> Especialización en Derecho Procesal Civil.</p>

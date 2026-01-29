@@ -23,7 +23,7 @@ const isActive = (path) => path === pathname;
 
               <li className="nav-item">
                 <Link href="/Sobremi" className={`nav-link ${isActive("/") ? "active" : ""}`}>
-                  Sobre mí
+                  Acerca de mí
                 </Link>
               </li>
 
@@ -34,14 +34,8 @@ const isActive = (path) => path === pathname;
               </li>
 
               <li className="nav-item">
-                <Link href="/Novedades" className={`nav-link ${isActive("/") ? "active" : ""}`}>
-                Novedades
-                </Link>
-              </li>
-
-              <li className="nav-item">
                 <Link href="/Contacto" className={`nav-link ${isActive("/") ? "active" : ""}`}>
-                  Solicita tu turno
+                  Contacto
                 </Link>
               </li>
             </ul>

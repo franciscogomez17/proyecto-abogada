@@ -1,7 +1,8 @@
 .previsional {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     border: 1px solid rgb(216, 161, 141);
     margin: 10px;
     padding: 20px;
@@ -19,7 +20,8 @@
 .familia {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
     border: 1px solid rgb(216, 161, 141);
     margin: 10px;
     padding: 20px;
@@ -37,7 +39,8 @@
 .sucesiones {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     border: 1px solid rgb(216, 161, 141);
     margin: 10px;
     padding: 20px;
@@ -55,7 +58,8 @@
 .contratos {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     border: 1px solid rgb(216, 161, 141);
     margin: 10px;
     padding: 20px;
@@ -73,7 +77,8 @@
 .consumo {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     border: 1px solid rgb(216, 161, 141);
     margin: 10px;
     padding: 20px;
@@ -133,7 +138,6 @@
 
 .servicios p {
     font-size: 13px;
-    line-height: 1.8;
 }
 
 .servicios:nth-child(even) {
@@ -142,4 +146,23 @@
 
 .servicios h4 {
     width: 100%;
+}
+
+.boton-servicio {
+    display: inline-block;
+    background-color: rgb(216, 161, 141);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border: 2px solid rgb(216, 161, 141);
+    border-radius: 1px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.boton-servicio:hover {
+    background-color: transparent;
+    color: rgb(216, 161, 141);
 }

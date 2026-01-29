@@ -4,7 +4,6 @@ import Script from "next/script";
 import "@/styles/servicios.css";
 import "@/styles/sobremi.css";
 import "@/styles/home.css";
-import "@/styles/novedades.css";
 import "@/styles/contacto.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
