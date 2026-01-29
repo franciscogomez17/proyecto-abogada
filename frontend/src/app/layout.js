@@ -4,10 +4,9 @@ import Script from "next/script";
 import "@/styles/servicios.css";
 import "@/styles/sobremi.css";
 import "@/styles/home.css";
-<Script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-  strategy="afterInteractive"
-/>
+import "@/styles/novedades.css";
+import "@/styles/contacto.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const metadata = {
   title: "Abogada",
@@ -18,19 +17,18 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <header>
-          <div className="holder">
-            <div className="logo">
-             <img src="/logo.png" width="100" alt="Abogada"/> 
-             <h1>Abogada</h1>
-            </div>
-          </div>
-        </header>
         <Nav />
         {children}
+        <div className="footer">
         <footer>
-          <p>Derechos Reservados. Abogada</p>
+          <p>Derechos Reservados. Abogada Maria Celeste Gomez</p>
         </footer>
+        </div>
+
+        <Script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  strategy="afterInteractive"
+/>
       </body>
     </html>
   );

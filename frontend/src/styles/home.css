@@ -2,6 +2,25 @@
     width: 75%;
     padding-right: 10px;
     box-sizing: border-box;
+    line-height: 1.8;
+}
+
+.homeimg {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    line-height: 0;
+}
+
+.homeimg img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
 }
 
 .testimonios {
@@ -16,28 +35,32 @@
 
 
 .bienvenidos p {
-    font-size: 20px;
+    font-size: 17px;
+    line-height: 1.8;
 }
 
 .testimonio {
     display: flex;
     flex-direction: column;
-    background-color: rgb(224, 143, 114);
+    background-color: rgb(216, 161, 141);
     padding: 16px;
-}
-
-.testimonio .cita {
-    font-weight: bold;
-    font-style: italic;
-    font-size: 22px;
-    background-color: yellow;
-    display: block;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgb(216, 161, 141);
 }
 
 .testimonio .autor {
-    font-size: 10px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 22px;
+    background-color: rgb(255, 193, 171);
+    display: block;
+    font-weight: bold;
     text-align: center;
-    background-color: rgb(224, 143, 114);
+}
+
+.testimonio .cita {
+    font-size: 15px;
+    text-align: center;
     display: block;
     margin: 12px 0;
 }

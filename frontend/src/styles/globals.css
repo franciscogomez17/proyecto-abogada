@@ -15,65 +15,66 @@ body {
     margin: 0 auto;
 }
 
-h2 {
-    color: rgb(224, 143, 114);
-    font-weight: 400px;
+.mi-navbar {
+    background-color: rgb(85, 83, 83);
+    margin-bottom: 0;
 }
 
-header {
-    background-color: rgb(224, 143, 114);
-    padding: 16px 0;
-}
-
-header h1 {
+.collapse navbar-collapse {
     color: white;
-    font-size: 40px;
-    font-weight: 100;
-    font-style: italic;
-    display: inline-block;
-    position: relative;
-    bottom: 35px;
-    margin-left: 10px;
 }
 
-nav{
-    background-color: rgb(197, 127, 101);
-    margin-bottom: 20px;
+.mi-navbar .nav-link {
+  position: relative;
+  color: white !important;
+  transition: color 0.3s ease;
 }
 
-nav ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.mi-navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: rgb(216, 161, 141);
+  transition: width 0.3s ease;
+}
+
+.mi-navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+.mi-navbar .nav-link:hover {
+  color: rgb(216, 161, 141);
+}
+
+
+.footer {
     display: flex;
-}
-
-nav ul li{
-    flex-grow: 1;
-}
-
-nav ul li a{
-    color: white;
-    text-decoration: none;
-    padding: 3px 6px;
-    display: block;
-    text-align: center;
-}
-
-nav ul li a:hover {
-    background-color: rgb(197, 127, 101);
-}
-
-nav ul li a.activo {
-    background-color: rgb(224, 143, 114);
-}
-
-footer {
-    background-color: rgb(196, 125, 99);
+    align-items: center;
     clear: both;
     color: black;
     text-align: center;
     padding: 50px 0;
     margin-top: 20px;
+    justify-content: center;
+    border-top: 1px solid rgb(216, 161, 141);
+}
+
+.mi-navbar .navbar-brand img {
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.mi-navbar .navbar-brand {
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 

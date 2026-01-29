@@ -5,20 +5,25 @@ export const metadata = {
 
 export default function Sobremi() {
     return(
-        <section className="holder">
+        <section className="holderSobremi">
             <div className="historia">
-                <h2>Historia</h2>
+                <h2>Quien soy</h2>
                 <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae magna vel massa scelerisque pulvinar. Cras vel augue id massa dignissim feugiat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer posuere, lectus nec fermentum hendrerit, velit nunc porta erat, sed cursus lacus neque a lorem. Phasellus vel eros lorem. Duis nec risus sit amet nunc ultricies volutpat. Nullam sit amet aliquet lorem. Donec sit amet ipsum vel justo luctus lacinia. Suspendisse potenti.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae magna vel massa scelerisque pulvinar. Cras vel augue id massa dignissim feugiat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer posuere, lectus nec fermentum hendrerit, velit nunc porta erat, sed cursus lacus neque a lorem. Phasellus vel eros lorem. Duis nec risus sit amet nunc ultricies volutpat. Nullam sit amet aliquet lorem. Donec sit amet ipsum vel justo luctus lacinia. Suspendisse potenti.</p>
+                    <p>Soy abogada egresada en el año 2019, con una profunda vocación por el Derecho Civil y la búsqueda de soluciones justas para mis clientes.</p>
+                    <p>Desde el año 2021, he consolidado mi practica de manera independiente, lo que me permite brindar una atención personaliada, cercana y basada en la confianza mutua.</p>
+                    <p>Mi compromiso con la excelencia me lleva a una formación constante. Recientemente, he profundizado mis conocimientos para ofrecer una defensa técnica de vanguardia en áreas sensibles y complejas del derecho actual.</p>
                 </div>
             </div>
+            <div className="Staff">
             <h2>Staff</h2>
             <div className="persona">
                 <img src="abogada_120x120.png" width="75" alt="imagen1" />
-                <h5>Maria</h5>
-            <h6>Abogada en Derecho Civil</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae magna vel massa scelerisque pulvinar. Cras vel augue id massa dignissim feugiat.</p>
+                <h5>Dra. Maria Celeste Gomez</h5>
+            <h6>Abogada Especialista en Derecho Civil</h6>
+            <p><strong>2025:</strong> Especialización en Derecho Procesal Civil.</p>
+            <p><strong>2024:</strong> Posgrado en Defensa Técnica de Niños, Niñas y Adolescentes.</p>
+            <p><strong>2024:</strong> Diplomado en Derecho del Consumidor</p>
+            </div>
             </div>
         </section>
     )

@@ -1,37 +1,80 @@
-.historia p {
-    font-size: 12px;
+.holderSobremi {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(216, 161, 141);
 }
+
+.historia h2 {
+    border-bottom: 1px solid rgb(216, 161, 141);
+}
+
+.historia p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
 
 .persona {
     display: flex;
-    justify-content: space-between;
-    border: 2px solid rgb(224, 143, 114);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(216, 161, 141);
     border-radius: 5px;
-    width: 18%;
+    width: 100%;
     text-align: center;
-    padding: 13px;
+    padding: 30px;
     box-sizing: border-box;
+    box-shadow: 0 10px 20px rgb(216, 161, 141);
+    transition: transform 0.3s ease;
 }
 
 .persona img {
     border-radius: 50%;
-    max-width: 60%;
-    box-shadow: 0 0 5px rgb(224, 143, 114);
+    max-width: 100%;
+    box-shadow: 0 0 20px rgb(224, 143, 114);
 }
 
 .persona h5,
 .persona h6 {
     margin: 0;
     font-weight: normal;
-    color: rgb(224, 143, 114);
+    color: black;
+    font-weight: bold;
 }
 
 .persona h5 {
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 5px;
+    border-bottom: 1px solid gray;
 }
 
 .persona h6 {
-    font-size: 11px;
+    font-size: 13px;
     font-style: italic;
+}
+
+.persona p { 
+    margin-top: 10px;
+    font-size: 11;
+}
+
+.staff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.persona:hover {
+    transform: translateY(-5px);
+}
+
+.homeimg {
+    width: 100%;
 }

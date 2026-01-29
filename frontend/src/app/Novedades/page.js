@@ -6,7 +6,7 @@ import NovedadItem from "@/components/NovedadItem";
 export default function Novedades() {
     return(
         <section className="holder">
-            <h2>Novedades</h2>
+            <h1>Espacio de Novedades y Guías Legales</h1>
             <NovedadItem />
         </section>
     )

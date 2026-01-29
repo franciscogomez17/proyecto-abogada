@@ -9,7 +9,7 @@ const isActive = (path) => path === pathname;
 
 
     return(
-         <div className="container-fluid">
+         <div className="container-fluid px-0">
       <nav className="navbar navbar-expand-lg mi-navbar">
         <div className="container-fluid">
 
@@ -41,12 +41,16 @@ const isActive = (path) => path === pathname;
 
               <li className="nav-item">
                 <Link href="/Contacto" className={`nav-link ${isActive("/") ? "active" : ""}`}>
-                  Contacto
+                  Solicita tu turno
                 </Link>
               </li>
             </ul>
           </div>
         </div>
+           <Link href="/" className="navbar-brand">
+           {' '}MCG
+      <img src="/logo.png" alt="imagendelogo" width="40" />
+    </Link>
       </nav>
     </div>
     )

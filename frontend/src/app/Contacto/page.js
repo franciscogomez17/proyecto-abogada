@@ -8,18 +8,17 @@ export default function Contacto() {
     return(
         <main className="holder contacto">
             <div className="columna">
-                <h2>Complete el siguiente formulario</h2>
+                <h3>Complete el siguiente formulario</h3>
+                <ContactForm />
             </div>
             <div className="columna datos">
-                <h2>Otras vías de contacto</h2>
+                <h3>Otras vías de contacto</h3>
                 <p>Tambien puede contactarse con nosotros utilizando los siguientes medios</p>
                 <ul>
-                    <li>Telefono:</li>
+                    <li>Whatsapp:</li>
                     <li>Email:</li>
                     <li>Instagram:</li>
-                    <li>Fcebook:</li>
                 </ul>
-                <ContactForm />
             </div>
 
 
