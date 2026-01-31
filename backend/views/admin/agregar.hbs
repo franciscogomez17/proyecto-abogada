@@ -1,0 +1,25 @@
+<div class="container" style="margin:100px auto">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h4 class="text-center">Agregar una nueva consulta</h4>
+            <form action="/admin/consultas/agregar" method="post">
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Nombre completo" name="nombre">
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Correo electrónico" name="email">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Teléfono" name="telefono">
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" placeholder="Motivo de la consulta" name="motivo"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Guardar Consulta</button>
+            </form>
+            {{#if error}}
+                <p class="text-danger mt-3">{{message}}</p>
+            {{/if}}
+        </div>
+    </div>
+</div>

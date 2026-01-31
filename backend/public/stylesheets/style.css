@@ -1,0 +1,47 @@
+body{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+header {
+  background-color: rgb(85, 83, 83);
+  padding: 17px 0;
+}
+
+header h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 100;
+  font-style: italic;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    clear: both;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+    justify-content: center;
+    border-top: 1px solid rgb(216, 161, 141);
+}
+
+.holder {
+  display: flex;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: black;
+  font-weight: 400;
+}
+
+.holder img {
+  border-radius: 20px;
+}
