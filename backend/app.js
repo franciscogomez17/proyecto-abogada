@@ -1,17 +1,16 @@
-require('dotenv').config();
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+
+require('dotenv').config();
 var session = require('express-session');
-var cors = require('cors');
-var apiRouter = require('./routes/api');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/admin/login');
-var consultasRouter = require('./routes/admin/consultas');
+var adminRouter = require('./routes/admin/consultas');
 
 var app = express();
 
@@ -24,33 +23,30 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(cors());
 
 
-app.use(session({
-  secret: 'Pr0yecto_ABogada123890',
+app.use(session ({
+  secret: 'pr0yecto-Abog4da',
   resave: false,
   saveUninitialized: true
 }));
 
-const secured = async (req, res, next) => {
-    try {
-        if (req.session.id_usuario) {
-            next(); 
-        } else {
-            res.redirect('/admin/login'); 
-        }
-    } catch (error) {
-        console.log("Error en secured:", error);
-        res.redirect('/admin/login');
+secured = async (req, res, next) => {
+  try {
+    if (req.session.id_usuario) {
+      next();
+    } else {
+      res.redirect('/admin/login');
     }
-};
+  } catch(error) {
+    console.log(error);
+  }
+}
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
-app.use('/admin/consultas', secured, consultasRouter);
-app.use('/api', apiRouter);
+app.use('/admin/consultas', secured, adminRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -66,7 +62,6 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render('error');
-
 });
 
 module.exports = app;
