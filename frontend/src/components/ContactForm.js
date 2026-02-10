@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 
+//en este componente use FETCH para enviar un objetivo JSON al servidor sin tener que andar recargando la pagina
+
 export default function ConsultaPage() {
     const initialForm = {
         nombre: "",
