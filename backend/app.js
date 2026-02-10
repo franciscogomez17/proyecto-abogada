@@ -5,6 +5,8 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var cors = require('cors');
 
+//en este caso use cors porque es una funcion que permite que la parte del frontend (el formulario), acceda a la parte del backend
+
 require('dotenv').config();
 var session = require('express-session');
 
