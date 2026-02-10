@@ -38,6 +38,7 @@ router.post('/agregar', async (req, res, next) => {
     }
 });
 
+
 router.get('/eliminar/:id', async (req, res, next) => {
     var id = req.params.id;
     await consultasModel.deleteConsultaById(id);
