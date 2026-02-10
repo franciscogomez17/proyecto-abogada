@@ -8,16 +8,16 @@ export default function Contacto() {
     return(
         <main className="holder contacto">
             <div className="columna">
-                <h3>Complete el siguiente formulario</h3>
+                <h3>Contactame completando el siguiente formulario:</h3>
                 <ContactForm />
             </div>
             <div className="columna datos">
                 <h3>Otras vías de contacto</h3>
-                <p>Tambien puede contactarse con nosotros utilizando los siguientes medios</p>
+                <p>Tambien puede contactarse conmigo utilizando los siguientes medios:</p>
                 <ul>
-                    <li>Whatsapp:</li>
-                    <li>Email:</li>
-                    <li>Instagram:</li>
+                    <li><strong>Whatsapp:</strong> +54 9 381 660-6033</li>
+                    <li><strong>Email:</strong> mariacelestegomez@gmail.com</li>
+                    <li><strong>Instagram:</strong> @abogada.mariagomez</li>
                 </ul>
             </div>
 

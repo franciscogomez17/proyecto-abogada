@@ -34,7 +34,7 @@ export default function Home() {
             </div>
       </div>
       <section className="serviciocaja">
-        <h2>Nuestras Areas de Servicio</h2>
+        <h2>Nuestras Áreas de Servicio</h2>
         <div className="serviciogridcaja">
         <div className="serviciogrid">
           {/* Previsional. */}

@@ -61,6 +61,7 @@ body {
     margin-top: 40px;
     justify-content: center;
     border-top: 1px solid rgb(216, 161, 141);
+    background-color: rgb(85, 83, 83);
 }
 
 .mi-navbar .navbar-brand img {
@@ -79,3 +80,7 @@ body {
     gap: 10px;
 }
 
+.footer p {
+    color: rgb(216, 161, 141);
+    font-weight: bold;
+}
