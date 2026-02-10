@@ -4,7 +4,7 @@ var usuariosModel = require('./../../models/usuariosModels');
 
 /*diseño del formulario*/ 
 router.get('/', function (req, res, next){
-    res.render('admin/login',{ //login.hbs
+    res.render('admin/login', { //login.hbs
         layout: 'admin/layout',
     });
 });
@@ -15,7 +15,7 @@ router.get('/logout', function (req, res, next) {
     res.render('admin/login', {
         layout: 'admin/layout'
     });
-})
+});
 
 /*procesar el formulario => post*/
 router.post('/', async (req, res, next) => {

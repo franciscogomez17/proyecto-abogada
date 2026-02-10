@@ -1,0 +1,26 @@
+<div class="container" style="margin:100px auto;">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h4>Modificar una consulta</h4>
+            <form action="/admin/consultas/modificar" method="post">
+            <input type="hidden" value="{{consulta.id}}" name="id">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nombre" value="{{consulta.nombre}}" name="nombre">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Email" value="{{consulta.email}}" name="email">
+            </div>
+            <div class="form-group">
+                 <input type="text" class="form-control" placeholder="Télefono" value="{{consulta.telefono}}" name="telefono">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Motivo" value="{{consulta.motivo}}" name="motivo">
+            </div>
+            <button type="submit" class="btn btn-primary">Modificar</button>
+            </form>
+        </div>
+    </div>
+    {{#if error}}
+    <h5>{{message}}</h5>
+    {{/if}}
+</div>
