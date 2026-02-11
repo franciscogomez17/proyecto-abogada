@@ -1,7 +1,9 @@
 "use client";
 import { useState } from "react";
+//esto es la api que cree
+import { createConsulta } from "@/api";
 
-//en este componente use FETCH para enviar un objetivo JSON al servidor sin tener que andar recargando la pagina
+//en este componente use fetch para enviar un objetivo json al servidor sin tener que andar recargando la pagina
 
 export default function ConsultaPage() {
     const initialForm = {
@@ -23,34 +25,27 @@ export default function ConsultaPage() {
         }));
     };
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setSending(true);
-        setMsg("");
+   const handleSubmit = async (e) => {
+    e.preventDefault();
+   setSending(true);
+  setMsg("");
 
-        try {
-            const response = await fetch("http://localhost:3017/api/consultas", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(formData)
-            });
+    try {
+const data = await createConsulta(formData);
 
-            const data = await response.json();
+if (!data.error) {
+  setMsg("¡Consulta enviada con éxito!");
+  setFormData(initialForm);
+} else {
+  setMsg("Hubo un error al enviar la consulta.");
+}
 
-            if (!data.error) {
-                setMsg("¡Consulta enviada con éxito!");
-                setFormData(initialForm);
-            } else {
-                setMsg("Hubo un error al enviar la consulta.");
-            }
-        } catch (error) {
-            setMsg("Error de conexión con el servidor.");
-        } finally {
-            setSending(false);
-        }
-    };
+} catch (error) {
+setMsg("Error de conexión con el servidor.");
+} finally {
+setSending(false);
+}
+};
 
     return (
         <main className="holder">

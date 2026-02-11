@@ -20,4 +20,20 @@ router.post('/consultas', async (req, res) => {
     }
 });
 
+//lo que hago con este get es recibir todas las consultas
+router.get('/consultas', async (req, res) => {
+try {
+const consultas = await consultasModels.getConsultas();
+
+res.json(consultas);
+
+} catch (error) {
+console.log(error);
+res.status(500).json({
+error: true,
+message: 'Error al obtener consultas'
+});
+}
+});
+
 module.exports = router;
